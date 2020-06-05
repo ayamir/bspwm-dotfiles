@@ -29,7 +29,7 @@ cp compton.conf ~/.config/
 ```
 
 ```bash
-cp -r Background/ ~/Pictures
+cp -r Background/ ~/Pictures/
 ```
 
 ```bash
