@@ -55,7 +55,7 @@ $HOME/Pictures/Background/auto-change.sh &
 xautolock -time 10 -locker '/usr/bin/lock' -corners ---- -cornersize 30 &
 ```
 
-About the weather, I use wttr.in, so you'd better add it to your /etc/hosts:
+About the weather, I use [wttr.in](https://github.com/chubin/wttr.in), so you'd better add it to your /etc/hosts:
 
 ```bash
 # wttr.in
