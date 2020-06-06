@@ -1,12 +1,16 @@
 # My ArchLinux&Bspwm Config
 
-Just clone it. And copy folder to corresponding directory.
+Just clone it. And copy folders to corresponding directorys.
+
+There are many wallpapers in my Background folder, so the time of download may be a little long.
 
 ![1.png](shot/1.png)
 
 Dependency: alacritty, dunst, polybar, rofi, compton-tryone-git, i3lock, ffmpeg, feh, nerd-fonts-complete
 
 If you already have your own config files, please make a backup.
+
+If you just want the config of polybar, you'd better use compton-tryone-git too.
 
 ```bash
 cp -r alacritty/ ~/.config/
