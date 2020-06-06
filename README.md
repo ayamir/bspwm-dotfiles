@@ -8,6 +8,10 @@ There are many wallpapers in my Background folder, so the time of download may b
 
 Dependency: alacritty, dunst, polybar, rofi, compton-tryone-git, i3lock, ffmpeg, feh, nerd-fonts-complete
 
+The theme of polybar: Material
+
+The theme of alacritty: Dracula
+
 If you already have your own config files, please make a backup.
 
 If you just want the config of polybar, you'd better use compton-tryone-git too.
