@@ -4,14 +4,12 @@
 
 # terminal emulator
 super + Return
-	alacritty
+  alacritty 
 
 # program launcher
 super + d
 	rofi -show drun
 
-super + Tab
-    rofi -show run
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -25,10 +23,7 @@ super + c
 super + shift + m
     netease-cloud-music
 
-super + shift + Delete
-    lock
-
-super + shift + a
+super + shift + s 
     flameshot gui
 
 
@@ -160,3 +155,26 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# for spiral mode
+# alt + s
+#    bspc config automatic_scheme spiral
+
+# for longest side mode
+# alt + l
+#    bspc config automatic_scheme longest_side
+
+# for automatic layout
+# alt + a
+#    bspc config automatic_scheme first_child
+
+# restart polybar
+alt + p
+    sh ~/.config/polybar/launch.sh
+
+# start IDEs
+alt + {c,i,l,y,w,d}
+    sh ~/.config/bspwm/start_ides.sh {code, idea, clion, pycharm, webstorm, datagrip}
+
+alt + control + Delete
+  lock
