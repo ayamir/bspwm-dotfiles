@@ -27,6 +27,7 @@ Xft.lcdfilter: lcdfilter
 *.color7:     #BFBFBF
 *.color15:    #E6E6E6
 
+XTerm*termName: xterm-256color
 XTerm*renderFont: true
 XTerm*faceName: xft:JetBrainsMono Nerd Font:size=13, \
                 xft:JoyPixels:size=12, \
@@ -51,8 +52,8 @@ XTerm*savelines: 16384
 ! double-click to select whole URLs :D
 XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 
-XTerm*scrollBar: true
-XTerm*rightScrollBar: true
+! XTerm*scrollBar: true
+! XTerm*rightScrollBar: true
 
 XTerm*highlightSelection: true
 XTerm*trimSelection: true
