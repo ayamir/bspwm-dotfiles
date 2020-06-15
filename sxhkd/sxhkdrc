@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-  alacritty 
+  xterm
 
 # program launcher
 super + d
@@ -25,6 +25,9 @@ super + shift + m
 
 super + shift + s 
     flameshot gui
+
+super + shift + v
+    VBoxManage startvm "WinDev2004Eval" --type gui
 
 
 XF86AudioRaiseVolume

@@ -10,9 +10,8 @@ xdman &
 xautolock -time 10 -locker '/usr/bin/lock' -corners ---- -cornersize 30 &
 xsetroot -cursor_name left_ptr
 wmname LG3D
-clight &
 caffeine &
-
+xfce4-power-manager &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
@@ -41,7 +40,9 @@ bspc rule -a Nitrogen state=floating
 bspc rule -a Lxappearance state=floating
 bspc rule -a Steam desktop='^5' state=floating
 bspc rule -a netease-cloud-music desktop='^4' state=floating
-bspc rule -a VirtualBox Manager desktop='^6' state=floating
+bspc rule -a deepin-system-monitor state=floating
+bspc rule -a 'VirtualBox Manager' desktop='^6' state=floating
+bspc rule -a 'VirtualBox Machine' desktop='^6' 
 bspc rule -a Galculator state=floating
 bspc rule -a Gpick state=floating
 bspc rule -a Code desktop='^2'
