@@ -58,8 +58,10 @@ sudo cp lock/lock.sh /usr/bin/lock && sudo cp lock/lock.png /bin/
 
 Add the following lines to you bspwmrc:
 
+并且在你的bspwmrc文件中添加下列行：
+
 ```bash
-compton -b --backend glx
+compton -b
 $HOME/.config/polybar/launch.sh &
 $HOME/Pictures/Background/auto-change.sh &
 # autolock if no action of 10 minutes
@@ -68,6 +70,9 @@ xautolock -time 10 -locker '/usr/bin/lock' -corners ---- -cornersize 30 &
 ```
 
 About the weather, I use [wttr.in](https://github.com/chubin/wttr.in), so you'd better add it to your /etc/hosts:
+
+关于天气我使用的是[wttr.in](https://github.com/chubin/wttr.in)，所以最好在你的/etc/hosts文件中添加下列行来解决域名解析不正确的问题：
+
 
 ```bash
 # wttr.in
