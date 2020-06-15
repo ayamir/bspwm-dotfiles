@@ -1,0 +1,12 @@
+# Colors
+set titlecolor magenta
+set statuscolor magenta
+set errorcolor red
+set selectedcolor red
+set stripecolor yellow
+set numbercolor green
+set keycolor green
+set functioncolor blue
+
+# Language colors
+include "/usr/share/nano/*.nanorc"
