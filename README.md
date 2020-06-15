@@ -6,6 +6,8 @@ There are many wallpapers in my Background folder, so the time of download may b
 
 ![1.png](shot/1.png)
 
+![2.png](shot/2.png)
+
 Dependency: alacritty, dunst, polybar, rofi, compton-tryone-git, i3lock, ffmpeg, feh, nerd-fonts-complete
 
 The theme of polybar: Material
