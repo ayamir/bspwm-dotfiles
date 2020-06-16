@@ -8,7 +8,7 @@ There are many wallpapers in my Background folder, so the time of download may b
 
 因为在Background目录下有很多我的壁纸文件，所以clone时间可能比较长
 
-![1.png](shot/1.png)
+![0.png](shot/0.png)
 
 Dependency:xterm/alacritty, cava, dunst, polybar, rofi, compton-tryone-git, i3lock, ffmpeg, feh, nerd-fonts-complete
 
