@@ -1,88 +1,40 @@
 # My ArchLinux&Bspwm Config
 
-只需要克隆这个repo，然后将文件夹放到相应的目录下
+Dracula:
 
-因为在Background目录下有很多我的壁纸文件，所以clone时间可能比较长
+![dracula.png](shot/dracula.png)
 
-![0.png](shot/0.png)
+Nord:
 
-软件依赖：termite, cava, dunst, nano, ranger, gotop, vim&vim-plus, pfetch, polybar, rofi, compton-tryone-git, i3lock, ffmpeg, feh, nerd-fonts-complete, zsh&oh-my-zsh
+![nord.png](shot/nord.png)
 
-全局主题是Dracula
+Terminal: Dracula: xterm Nord: termite
 
-如果你已经有了自己的config文件，请做好备份
+Audio output emulator: cava
 
-如果你只想要polybar的config文件，最好同时也使用compton-tryone-git来满足使用的blur效果
+Message notifier: dunst
 
-直接复制即可用的：
+Editor: vim(with vim-plus), nano
 
-```bash
-cp -r alacritty/ ~/.config/
-```
+File browser: ranger
 
-```bash
-cp -r dunst/ ~/.config/
-```
+System monitor: gotop
 
-```bash
-cp -r cava/ ~/.config/
-```
+System information: pfetch
 
-```bash
-cp -r fontconfig/ ~/.config/
-```
+Bar: polybar
 
-```bash
-cp -r nano/ ~/.config/
-```
+Program start menu: rofi
 
-```bash
-cp -r neofetch/ ~/.config/
-```
+Compton: compton-tryone-git
 
-```bash
-cp -r ranger/ ~/.config/
-```
+Lock: i3lock(with blur and a lock png) ffmpeg
 
-```bash
-cp -r polybar/ ~/.config/
-```
+Wallpaper: feh
 
-```bash
-cp -r termite/ ~/.config/
-```
+Font: Droid Sans Mono Nerd Font:size=13 (nerd-fonts-complete needed)
 
-```bash
-cp -r rofi/ ~/.config/
-```
-
-```bash
-cp compton.conf ~/.config/
-```
-
-```bash
-cp -r Background/ ~/Pictures/
-```
-
-需要一定配置的：
-
-.vimrc：不建议直接拷贝 我使用的是[vim-plus](https://github.com/chxuan/vimplus)，关于Dracula主题请直接访问：[https://draculatheme.com/vim](https://draculatheme.com/vim)
-
-.Xresource：不建议直接拷贝 我这个文件中的内容只包括基于x-window的应用的Dracula配置和xterm的配置
-
-.zshrc：不建议直接拷贝 关于pfetch的alias可以照抄
-
-xfce4文件夹：只使用xfce4-terminal的Dracula主题的话：
-
-```bash
-vim ~/.config/xfce4/teminal/terminalrc
-```
-
-将其中ColorPalette所在行修改为：
-
-```
-ColorPalette=#000000;#FF5555;#50FA7B;#F1FA8C;#BD93F9;#FF79C6;#8BE9FD;#BFBFBF;#4D4D4D;#FF6E67;#5AF78E;#F4F99D;#CAA9FA;#FF92D0;#9AEDFE;#E6E6E6
-```
+Shell: zsh(with oh-my-zsh)
 
 关于i3lock
 
