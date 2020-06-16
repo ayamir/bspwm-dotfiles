@@ -40,25 +40,13 @@ Font: Droid Sans Mono Nerd Font:size=13 (nerd-fonts-complete needed)
 
 Shell: zsh(with oh-my-zsh)
 
-关于i3lock
+i3lock's config: (About autolock's details, please look the bspwmrc)
 
 ```bash
 sudo cp lock/lock.sh /usr/bin/lock && sudo cp lock/lock.png /bin/
 ```
 
-并且在你的bspwmrc文件中添加下列行：
-
-```bash
-compton -b
-$HOME/.config/polybar/launch.sh &
-$HOME/Pictures/Background/auto-change.sh &
-# autolock if no action of 10 minutes
-# if you want to avoid it, just move your cursor to one of the corner of screen
-xautolock -time 10 -locker '/usr/bin/lock' -corners ---- -cornersize 30 &
-```
-
-关于天气我使用的是[wttr.in](https://github.com/chubin/wttr.in)，所以最好在你的/etc/hosts文件中添加下列行来解决域名解析不正确的问题：
-
+I use [wttr.in](https://github.com/chubin/wttr.in) to get weather, so you'd better add follow lines in your /etc/hosts to solve the problem of DNS resolution
 
 ```bash
 # wttr.in
