@@ -4,9 +4,13 @@ Dracula:
 
 ![dracula.png](shot/dracula.png)
 
+![dracula-wallpaper.png](shot/dracula-wallpaper.png)
+
 Nord:
 
 ![nord.png](shot/nord.png)
+
+![nord-wallpaper.png](shot/nord-wallpaper.png)
 
 Terminal: Dracula: xterm Nord: termite
 
