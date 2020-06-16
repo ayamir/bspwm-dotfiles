@@ -10,8 +10,6 @@ There are many wallpapers in my Background folder, so the time of download may b
 
 ![1.png](shot/1.png)
 
-![2.png](shot/2.png)
-
 Dependency:xterm/alacritty, cava, dunst, polybar, rofi, compton-tryone-git, i3lock, ffmpeg, feh, nerd-fonts-complete
 
 软件依赖：xterm或alacritty, cava, dunst, polybar, rofi, compton-tryone-git, i3lock, ffmpeg, feh, nerd-fonts-complete
