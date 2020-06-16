@@ -3,7 +3,8 @@
 sxhkd &
 compton -b
 $HOME/.config/polybar/launch.sh &
-$HOME/Pictures/Background/auto-change.sh &
+feh --bg-scale $HOME/Pictures/Background/wallhaven-mdq3z1.jpg
+#$HOME/Pictures/Background/auto-change.sh &
 fcitx &
 redshift-gtk &
 xdman &
