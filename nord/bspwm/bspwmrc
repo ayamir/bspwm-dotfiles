@@ -3,7 +3,7 @@
 sxhkd &
 compton -b
 $HOME/.config/polybar/launch.sh &
-feh --bg-scale $HOME/Pictures/Background/lakeside_2019_midnight.png
+feh --bg-scale $HOME/Pictures/wallpaper/lakeside_2019_midnight.png
 #$HOME/Pictures/Background/auto-change.sh &
 fcitx &
 redshift-gtk &
