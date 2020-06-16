@@ -4,7 +4,7 @@ Dracula:
 
 ![dracula.png](shot/dracula.png)
 
-![dracula-wallpaper.png](wallpaper/dracula-wallpaper.png)
+![dracula-wallpaper.png](wallpaper/dracula-wallpaper.jpg)
 
 Nord:
 
