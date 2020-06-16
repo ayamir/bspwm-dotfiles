@@ -80,6 +80,8 @@ vim ~/.config/xfce4/teminal/terminalrc
 ColorPalette=#000000;#FF5555;#50FA7B;#F1FA8C;#BD93F9;#FF79C6;#8BE9FD;#BFBFBF;#4D4D4D;#FF6E67;#5AF78E;#F4F99D;#CAA9FA;#FF92D0;#9AEDFE;#E6E6E6
 ```
 
+关于i3lock
+
 ```bash
 sudo cp lock/lock.sh /usr/bin/lock && sudo cp lock/lock.png /bin/
 ```
