@@ -6,7 +6,7 @@
 
 ![0.png](shot/0.png)
 
-软件依赖：xterm或alacritty或xfce4-terminal, cava, dunst, nano, ranger, gotop, vim&vim-plus, pfetch, polybar, rofi, compton-tryone-git, i3lock, ffmpeg, feh, nerd-fonts-complete, zsh&oh-my-zsh
+软件依赖：termite, cava, dunst, nano, ranger, gotop, vim&vim-plus, pfetch, polybar, rofi, compton-tryone-git, i3lock, ffmpeg, feh, nerd-fonts-complete, zsh&oh-my-zsh
 
 全局主题是Dracula
 
@@ -46,6 +46,10 @@ cp -r ranger/ ~/.config/
 
 ```bash
 cp -r polybar/ ~/.config/
+```
+
+```bash
+cp -r termite/ ~/.config/
 ```
 
 ```bash
