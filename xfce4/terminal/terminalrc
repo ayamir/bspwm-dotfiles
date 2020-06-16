@@ -34,4 +34,7 @@ ColorCursor=#F8F8F2
 ColorSelectionBackground=#49484c4b6262
 ColorPalette=#000000;#FF5555;#50FA7B;#F1FA8C;#BD93F9;#FF79C6;#8BE9FD;#BFBFBF;#4D4D4D;#FF6E67;#5AF78E;#F4F99D;#CAA9FA;#FF92D0;#9AEDFE;#E6E6E6
 TabActivityColor=#FF5555
+ShortcutsNoMenukey=TRUE
+ShortcutsNoMnemonics=TRUE
+ShortcutsNoHelpkey=TRUE
 
