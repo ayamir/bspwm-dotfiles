@@ -16,3 +16,5 @@ BLUE=$(echo -e "\001\033[00;94m\002")
 YELLOW=$(echo -e "\001\033[00;33m\002")
 MAGENTA=$(echo -e "\001\033[00;35m\002")
 CYAN=$(echo -e "\001\033[00;36m\002")
+
+export TERM=xterm-256color
