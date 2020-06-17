@@ -112,7 +112,7 @@ alias gc="git clone"
 alias ga="git add"
 alias gm="git commit -m"
 alias gpl="git pull origin master"
-alias gpl="git push origin master"
+alias gps="git push origin master"
 
 alias pyins="pip install --user"
 alias pyuins="pip uninstall"
