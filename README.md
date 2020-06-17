@@ -32,6 +32,10 @@ Nord:
 
 **Bar**: polybar
 
+About dracula polybar, I customized [Material Polybar](https://github.com/Murzchnvok/polybar-material)
+
+About nord polybar, I customized [Nord Polybar](https://github.com/Yucklys/polybar-nord-theme)
+
 **Program start menu**: rofi
 
 **Compton**: compton-tryone-git
