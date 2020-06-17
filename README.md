@@ -36,7 +36,7 @@ Nord:
 
 **Compton**: compton-tryone-git
 
-**Lock**: i3lock(with blur and a lock png) ffmpeg
+**Lock**: i3lock(with blur and a lock png) ffmpeg xautolock
 
 **Wallpaper**: feh
 
