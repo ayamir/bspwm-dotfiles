@@ -22,14 +22,14 @@ print_info() {
     info "GPU" gpu
     info "Memory" memory
 
-    info "GPU Driver" gpu_driver  # Linux/macOS only
-    info "CPU Usage" cpu_usage
-    info "Disk" disk
-    info "Battery" battery
-    info "Font" font
-    info "Song" song
-    [[ "$player" ]] && prin "Music Player" "$player"
-    info "Local IP" local_ip
+    # info "GPU Driver" gpu_driver  # Linux/macOS only
+    # info "CPU Usage" cpu_usage
+    # info "Disk" disk
+    # info "Battery" battery
+    # info "Font" font
+    # info "Song" song
+    # [[ "$player" ]] && prin "Music Player" "$player"
+    # info "Local IP" local_ip
     # info "Public IP" public_ip
     # info "Users" users
     # info "Locale" locale  # This only works on glibc systems.
@@ -375,7 +375,7 @@ de_version="off"
 # disk_show=('/'):
 #      'Disk (/): 74G / 118G (66%)'
 #
-disk_show=('/home/angad')
+disk_show=('/')
 
 # Disk subtitle.
 # What to append to the Disk subtitle.
@@ -473,8 +473,7 @@ music_player="auto"
 #
 # Example:
 # default: 'Song: Jet - Get Born - Sgt Major'
-# song_format="%artist% - %album% - %title%"
-song_format="%artist%-%title%"
+song_format="%artist% - %album% - %title%"
 
 # Print the Artist, Album and Title on separate lines
 #
