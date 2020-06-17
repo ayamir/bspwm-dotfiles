@@ -4,13 +4,13 @@ Dracula:
 
 ![dracula.png](shot/dracula.png)
 
-![dracula-wallpaper.png](wallpaper/dracula-wallpaper.jpg)
+![dracula-wallpaper.png](wallpaper/Dracula.jpg)
 
 Nord:
 
 ![nord.png](shot/nord.png)
 
-![nord-wallpaper.png](wallpaper/nord-wallpaper.png)
+![nord-wallpaper.png](wallpaper/Nord.png)
 
 **Dracula GTK Theme**: [Ant Dracula](https://www.gnome-look.org/p/1099856/)
 
