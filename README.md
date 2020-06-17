@@ -12,33 +12,37 @@ Nord:
 
 ![nord-wallpaper.png](wallpaper/nord-wallpaper.png)
 
-Terminal: Dracula: xterm Nord: termite
+Dracula GTK Theme: [Ant Dracula](https://www.gnome-look.org/p/1099856/)
 
-Audio output emulator: cava
+Nord GTK Theme: [Nordic](https://www.gnome-look.org/p/1267246/)
 
-Message notifier: dunst
+**Terminal**: Dracula: xterm Nord: termite
 
-Editor: vim(with vim-plus), nano
+**Audio output emulator**: cava
 
-File browser: ranger
+**Message notifier**: dunst
 
-System monitor: gotop
+**Editor**: vim(with vim-plus), nano
 
-System information: pfetch
+**File browser**: ranger
 
-Bar: polybar
+**System monitor**: gotop
 
-Program start menu: rofi
+**System information**: pfetch
 
-Compton: compton-tryone-git
+**Bar**: polybar
 
-Lock: i3lock(with blur and a lock png) ffmpeg
+**Program start menu**: rofi
 
-Wallpaper: feh
+**Compton**: compton-tryone-git
 
-Font: Droid Sans Mono Nerd Font:size=13 (nerd-fonts-complete needed)
+**Lock**: i3lock(with blur and a lock png) ffmpeg
 
-Shell: zsh(with oh-my-zsh)
+**Wallpaper**: feh
+
+**Font**: Droid Sans Mono Nerd Font:size=13 (nerd-fonts-complete needed)
+
+**Shell**: zsh(with oh-my-zsh)
 
 i3lock's config: (About autolock's details, please look the bspwmrc)
 
