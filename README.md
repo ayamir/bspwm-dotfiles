@@ -12,9 +12,9 @@ Nord:
 
 ![nord-wallpaper.png](wallpaper/nord-wallpaper.png)
 
-Dracula GTK Theme: [Ant Dracula](https://www.gnome-look.org/p/1099856/)
+**Dracula GTK Theme**: [Ant Dracula](https://www.gnome-look.org/p/1099856/)
 
-Nord GTK Theme: [Nordic](https://www.gnome-look.org/p/1267246/)
+**Nord GTK Theme**: [Nordic](https://www.gnome-look.org/p/1267246/)
 
 **Terminal**: Dracula: xterm Nord: termite
 
