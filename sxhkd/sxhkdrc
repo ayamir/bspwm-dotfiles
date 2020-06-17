@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-  xterm
+  termite
 
 # program launcher
 super + d
@@ -23,7 +23,7 @@ super + c
 super + shift + m
     netease-cloud-music
 
-super + shift + s 
+super + shift + s
     flameshot gui
 
 super + shift + v
