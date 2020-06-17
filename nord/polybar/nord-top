@@ -1,0 +1,224 @@
+; vim:ft=dosini
+
+[module/bspwm]
+type = internal/bspwm
+
+format = <label-state>
+
+label-focused = %{T2}%index%%{T-}
+label-focused-padding = 2
+label-focused-foreground = ${colors.nord7}
+label-focused-underline = ${colors.nord7}
+
+label-urgent = %{T2}%index%%{T-}
+label-urgent-foreground = ${colors.urgent}
+label-urgent-background = ${colors.foreground}
+label-urgent-padding = 2
+
+label-empty = %{T2}%index%%{T-}
+label-empty-background = ${colors.background}
+label-empty-foreground = ${colors.frost-a4}
+label-empty-padding = 1
+
+label-occupied = %{T2}%index%%{T-}
+label-occupied-background = ${colors.buffer}
+label-occupied-foreground = ${colors.frost-a2}
+label-occupied-padding = 1
+
+
+[module/title]
+type = internal/xwindow
+format-foreground = ${colors.nord7}
+format-underline = ${colors.nord7}
+format-padding = 4
+
+label-maxlen = 40
+label-empty =
+
+
+[module/date]
+type = internal/date
+interval = 1.0
+; See "http://en.cppreference.com/w/cpp/io/manip/put_time" for details on how to format the date string
+; NOTE: if you want to use syntax tags here you need to use %%{...}
+date = %H:%M
+
+date-alt = %Y-%m-%d%
+
+format = <label>
+label =  %date%
+label-margin = 1
+label-underline = ${colors.nord8}
+
+[module/battery]
+type = internal/battery
+
+full-at = ${config.battery-full-at}
+
+battery = ${config.battery-bat}
+adapter = ${config.battery-adp}
+
+format-charging = <animation-charging> <label-charging>
+format-charging-underline = ${colors.foreground}
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-framerate = 750
+
+format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-underline = ${colors.notify}
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-foreground = ${colors.notify}
+
+label-full = 
+label-full-foreground = ${colors.success}
+label-full-underline = ${colors.success}
+
+[module/keyboard]
+type = internal/xkeyboard
+
+; List of indicators to ignore
+bufferlist-0 = num lock
+bufferlist-1 = scroll lock
+
+; Format
+format = <label-indicator>
+
+label-indicator-on-capslock =  CL
+label-indicator-on-capslock-foreground = ${colors.warning}
+label-indicator-on-capslock-underline = ${colors.warning}
+
+; Icons
+layout-icon-default = 
+
+[module/pulseaudio]
+type = internal/pulseaudio
+use-ui-max = false
+
+
+; Format
+format-volume = <ramp-volume> <label-volume>
+format-volume-underline = ${colors.function}
+
+label-muted =  muted
+label-muted-foreground = ${colors.urgent}
+label-muted-underline = ${colors.urgent}
+
+ramp-volume-0 = 
+ramp-volume-0-foreground = ${colors.success}
+ramp-volume-1 = 
+ramp-volume-1-foreground = ${colors.notify}
+ramp-volume-2 = 
+ramp-volume-2-foreground = ${colors.urgent}
+
+ramp-headphones-0 = 
+
+ramp-volume-foreground = ${colors.nord7}
+
+click-right = pavucontrol&
+
+[module/backlight]
+type = internal/backlight
+
+card = intel_backlight
+
+enable-scroll = true
+
+; Format
+format = <ramp> <label>
+format-underline = ${colors.nord9}
+
+ramp-0 = 
+
+label = %{A1:$HOME/.config/polybar/scripts/toggle-redshift.sh:}%percentage%%%{A}
+ramp-foreground = ${colors.nord9}
+
+[module/mpd]
+type = internal/mpd
+
+host = ${config.mpd-host}
+port = ${config.mpd-port}
+
+; Format
+format-online = <toggle> <icon-prev> <label-song> <icon-next> <icon-stop> | <bar-progress> | <icon-repeat> <icon-random>
+format-paused = <toggle> <icon-prev> <label-song> <icon-next> <icon-stop>
+format-stopped =  <toggle>
+
+label-song-underline = ${colors.nord8}
+label-song = %artist:0:10:...% - %title:0:10:...%
+
+icon-play = 
+icon-play-foreground = ${colors.success}
+icon-play-margin = 1
+icon-pause = 
+icon-pause-foreground = ${colors.warning}
+icon-pause-margin = 1
+icon-stop = 
+icon-stop-foreground = ${colors.urgent}
+icon-stop-margin = 1
+icon-prev = 
+icon-prev-foreground = ${colors.function}
+icon-prev-margin = 1
+icon-next = 
+icon-next-foreground = ${colors.function}
+icon-next-margin = 1
+icon-repeat = 
+icon-repeat-margin = 1
+icon-random = 
+icon-random-margin = 1
+
+toggle-on-foreground = ${colors.success}
+toggle-off-foreground = ${colors.urgent}
+
+bar-progress-width = 20
+bar-progress-indicator = |
+bar-progress-fill = -
+bar-progress-empty = -
+bar-progress-gradient = true
+bar-progress-foreground-0 = ${colors.nord7}
+bar-progress-foreground-1 = ${colors.nord8}
+bar-progress-foreground-2 = ${colors.nord9}
+
+[module/notify]
+type = custom/text
+content = 
+content-foreground = ${colors.warning}
+content-underline = ${colors.warning}
+content-padding = 1
+
+click-left = ${config.notify-click-left}
+
+[module/network-short]
+type = internal/network
+interface = ${config.interface}
+
+interval = 1
+
+format-connected = %{A1:networkmanager_dmenu:}<ramp-signal>%{A}
+format-disconnected = %{A1:networkmanager_dmenu:}<label-disconnected>%{A}
+
+label-disconnected = 
+label-disconnected-foreground = ${colors.urgent}
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+
+ramp-signal-0-foreground = ${colors.urgent}
+ramp-signal-0-underline = ${colors.urgent}
+
+ramp-signal-1-foreground = ${colors.notify}
+ramp-signal-1-underline = ${colors.notify}
+
+ramp-signal-2-foreground = ${colors.nord7}
+ramp-signal-2-underline = ${colors.nord7}
+
+ramp-signal-3-foreground = ${colors.success}
+ramp-signal-3-underline = ${colors.success}

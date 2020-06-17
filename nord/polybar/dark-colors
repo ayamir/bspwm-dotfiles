@@ -1,0 +1,21 @@
+; vim:ft=dosini
+
+[colors]
+background = #2E3440
+buffer = #3B4252
+foreground = #D8DEE9
+nord6 = #ECEFF4
+nord7 = #8FBCBB
+nord8 = #88C0D0
+nord9 = #81A1C1
+urgent = #BF616A
+warning = #D08770
+notify = #EBCB8B
+success = #A3BE8C
+function = #B48EAD
+grey-9 = #212121
+
+frost-a1 = #8fbcbb
+frost-a2 = #88c0d0
+frost-a3 = #81a1c1
+frost-a4 = #5e81ac
