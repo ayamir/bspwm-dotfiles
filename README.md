@@ -44,7 +44,7 @@ Nord:
 
 **Wallpaper**: feh
 
-**Font**: Droid Sans Mono Nerd Font:size=13 (nerd-fonts-complete needed)
+**Font**: Droid Sans Mono Nerd Font:size=13 (nerd-fonts-complete ttf-font-awesome noto-fonts-complete powerline-fonts needed)
 
 **Shell**: zsh(with oh-my-zsh)
 
