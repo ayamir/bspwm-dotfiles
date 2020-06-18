@@ -34,6 +34,7 @@ font-1 = FontAwesome5FreeSolid:pixelsize=12;1
 font-2 = FontAwesome5FreeRegular:pixelsize=12;1
 font-3 = FontAwesome5Brands:pixelsize=8;1
 font-4 = WenQuanYiMicroHei:size=12
+font-5 = NotoColorEmoji:pixelsize=8;1:fontformat=truetype:scale=10:antialias=true;1
 
 modules-left = ${config.top-left}
 modules-center = ${config.top-center}
@@ -75,8 +76,12 @@ font-1 = Font Awesome 5 Free:style=Solid:pixelsize=12;1
 font-2 = Font Awesome 5 Brands:pixelsize=8;1
 font-3 = Weather Icons:style=Regular:size=12;1
 font-4 = WenQuanYiMicroHei:size=12
-;font-5 = "Noto Color Emoji:style=Regular:size=2"
 font-5 = NotoColorEmoji:pixelsize=8;1:fontformat=truetype:scale=10:antialias=true;1
+font-6 = "SauceCodePro Nerd Font:style=Medium:size=9;2"
+font-7 = "SauceCodePro Nerd Font:style=Bold:size=9;2"
+font-8 = "SauceCodePro Nerd Font:size=11;2"
+font-9 = "SauceCodePro Nerd Font:size=16;4"
+font-10 = "SauceCodePro Nerd Font:size=18;4"
 
 modules-left = ${config.bottom-left}
 modules-center = ${config.bottom-center}

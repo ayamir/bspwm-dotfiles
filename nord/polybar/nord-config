@@ -39,7 +39,7 @@ override-redirect = false
 # Top modules
 top-left = title
 top-center = bspwm
-top-right = backlight pulseaudio  battery network-short date
+top-right = update backlight pulseaudio  battery network-short date
 
 # Bottom modules
 bottom-left =
