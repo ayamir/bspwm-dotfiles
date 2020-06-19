@@ -1,12 +1,12 @@
 # My ArchLinux&Bspwm Config
 
-Dracula:
+## Dracula:
 
 ![dracula.png](shot/dracula.png)
 
 ![dracula-wallpaper.png](wallpaper/Dracula.jpg)
 
-Nord:
+## Nord:
 
 ![nord.png](shot/nord.png)
 
@@ -16,7 +16,7 @@ Nord:
 
 **Nord GTK Theme**: [Nordic](https://www.gnome-look.org/p/1267246/)
 
-**Terminal**: Dracula: xterm Nord: termite
+**Terminal**: Dracula: xterm Nord: termite(suggested)
 
 **Audio output emulator**: cava
 
@@ -44,7 +44,11 @@ Nord:
 
 **Wallpaper**: feh
 
-**Font**: Droid Sans Mono Nerd Font:size=13 (nerd-fonts-complete ttf-font-awesome noto-fonts-complete powerline-fonts needed)
+**Font**: Droid Sans Mono Nerd Font:size=13 (noto-fonts-complete powerline-fonts needed)
+
+If you use the draula theme, in order to display the icon font, you should install **nerd-fonts-complete**
+
+If you use the nord theme, in order to display the icon font, you should install **ttf-font-awesome** and **otf-font-awesome**
 
 **Shell**: zsh(with oh-my-zsh)
 
