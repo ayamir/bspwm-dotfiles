@@ -16,6 +16,7 @@ radius = ${config.radius}
 
 fixed-center = ${config.fixed-center}
 dpi = ${config.dpi}
+wm-restack = bspwm
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -59,6 +60,7 @@ radius = ${config.radius}
 fixed-center = ${config.fixed-center}
 bottom = true
 dpi = ${config.dpi}
+wm-restack = bspwm
 
 background = ${colors.background}
 foreground = ${colors.foreground}

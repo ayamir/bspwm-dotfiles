@@ -15,6 +15,7 @@ radius = 0.0
 fixed-center = true
 override-redirect = false
 
+
 # module list:
 # alsa: Display current volume
 # backlight: Display screen brightness
