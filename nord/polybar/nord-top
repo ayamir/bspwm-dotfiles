@@ -3,24 +3,52 @@
 [module/bspwm]
 type = internal/bspwm
 
-format = <label-state>
+format = <label-state> <label-mode>
 
-label-focused = %{T2}%index%%{T-}
+pin-workspace = true
+
+strip-wsnumbers = true
+
+index-sort = true
+enable-click = true
+enable-scroll = true
+wrapping-scroll = true
+reverse-scroll = true
+fuzzy-match = false
+
+;label-font = 2
+
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
+
+;label-separator = |
+;label-separator-foreground = ${colors.buffer}
+
+label-focused = %icon%
+;label-focused = %{T2}%index%%{T-}
 label-focused-padding = 2
 label-focused-foreground = ${colors.nord7}
 label-focused-underline = ${colors.frost-a4}
 
-label-urgent = %{T2}%index%%{T-}
+label-urgent = %icon%
 label-urgent-foreground = ${colors.urgent}
 label-urgent-background = ${colors.foreground}
 label-urgent-padding = 2
 
-label-empty = %{T2}%index%%{T-}
+label-empty = %icon%
 label-empty-background = ${colors.background}
 label-empty-foreground = ${colors.frost-a4}
 label-empty-padding = 1
 
-label-occupied = %{T2}%index%%{T-}
+label-occupied = %icon%
 label-occupied-background = ${colors.buffer}
 label-occupied-foreground = ${colors.frost-a2}
 label-occupied-padding = 1
@@ -29,7 +57,7 @@ label-occupied-padding = 1
 [module/title]
 type = internal/xwindow
 format-foreground = ${colors.nord7}
-format-underline = ${colors.frost-a4}
+format-underline = ${colors.nord8}
 format-padding = 4
 
 label-maxlen = 40

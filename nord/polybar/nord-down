@@ -23,13 +23,13 @@ format = <ramp-used> <label>
 
 label = %gb_used%/%gb_total%
 
-ramp-used-0 = 
+ramp-used-0 = 
 ramp-used-0-foreground = ${colors.success}
 
-ramp-used-1 = 
+ramp-used-1 = 
 ramp-used-1-foreground = ${colors.warning}
 
-ramp-used-2 = 
+ramp-used-2 = 
 ramp-used-2-foreground = ${colors.urgent}
 
 [module/github]
