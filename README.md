@@ -46,7 +46,7 @@
 
 **Font**: Droid Sans Mono Nerd Font:size=13 (noto-fonts-complete powerline-fonts needed)
 
-If you use the draula theme, in order to display the icon font, you should install **nerd-fonts-complete**
+If you use the dracula theme, in order to display the icon font, you should install **nerd-fonts-complete**
 
 If you use the nord theme, in order to display the icon font, you should install **ttf-font-awesome** and **otf-font-awesome**
 
