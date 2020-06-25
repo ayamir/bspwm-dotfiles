@@ -1,7 +1,7 @@
 #! /bin/sh
 
 sxhkd &
-setxkbmap -option "ctrl:nocaps"
+setxkbmap -option "ctrl:swapcaps"
 compton -b
 $HOME/.config/polybar/launch.sh &
 feh --bg-scale $HOME/Pictures/Background/wallhaven-kw6ro1.png
