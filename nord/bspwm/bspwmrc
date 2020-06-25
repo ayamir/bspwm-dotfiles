@@ -1,20 +1,21 @@
 #! /bin/sh
 
 sxhkd &
+setxkbmap -option "ctrl:nocaps"
 compton -b
 $HOME/.config/polybar/launch.sh &
-feh --bg-scale $HOME/Pictures/wallpaper/lakeside_2019_midnight.png
+feh --bg-scale $HOME/Pictures/Background/wallhaven-kw6ro1.png
 #$HOME/Pictures/Background/auto-change.sh &
 fcitx &
-redshift-gtk &
 xdman &
 xautolock -time 10 -locker '/usr/bin/lock' -corners ---- -cornersize 30 &
 xsetroot -cursor_name left_ptr
 wmname LG3D
+copyq &
 caffeine-indicator &
 xfce4-power-manager &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 bspc config border_width         1
 bspc config window_gap           5
@@ -26,7 +27,7 @@ bspc config normal_border_color "#44475a"
 bspc config active_border_color "#5e81ac"
 bspc config presel_feedback_color "#6272a4"
 
-bspc config split_ratio          0.52
+bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
@@ -39,8 +40,9 @@ bspc rule -a java-lang-Thread desktop='^8' state=floating
 bspc rule -a xdman-Main state=floating
 bspc rule -a Nitrogen state=floating
 bspc rule -a Lxappearance state=floating
+bspc rule -a Xfce4-about state=floating
 bspc rule -a Steam desktop='^5' state=floating
-bspc rule -a netease-cloud-music desktop='^4' state=floating
+bspc rule -a netease-cloud-music state=floating desktop='^4'
 bspc rule -a deepin-system-monitor state=floating
 bspc rule -a 'VirtualBox Manager' desktop='^6' state=floating
 bspc rule -a 'VirtualBox Machine' desktop='^6'
