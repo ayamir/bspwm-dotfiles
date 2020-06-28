@@ -2,7 +2,7 @@
 
 [config]
 # DPI value for HiDPI screen
-dpi = 96
+dpi = 100
 
 # bar position, apply globally
 width = 100%

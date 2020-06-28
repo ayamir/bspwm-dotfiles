@@ -93,3 +93,5 @@ cursor-scroll = ns-resize
 
 enable-ipc = true
 
+[settings]
+pseudo-transparency = true

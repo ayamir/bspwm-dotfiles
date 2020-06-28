@@ -51,7 +51,8 @@ label-empty-foreground = ${colors.frost-a4}
 label-empty-padding = 1
 
 label-occupied = %icon%
-label-occupied-background = ${colors.buffer}
+;label-occupied-background = ${colors.buffer}
+label-occupied-background = ${colors.background}
 label-occupied-foreground = ${colors.frost-a2}
 label-occupied-padding = 1
 
@@ -68,7 +69,7 @@ label-empty =
 [module/update]
 type = custom/script
 exec = ~/.config/polybar/scripts/updates-pacman-aurhelper.sh
-internal = 600
+internal = 6000
 
 [module/date]
 type = internal/date
