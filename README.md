@@ -4,13 +4,19 @@
 
 ![dracula.png](shot/dracula.png)
 
-![dracula-wallpaper.png](wallpaper/Dracula.jpg)
+![dracula-wallpaper](wallpaper/Dracula.jpg)
 
 ## Nord:
 
 ![nord.png](shot/nord.png)
 
-![nord-wallpaper.png](wallpaper/Nord.png)
+![nord-wallpaper](wallpaper/Nord.png)
+
+## MacBigSlur:
+
+![macBigSlurShot](shot/macBigSlur.png)
+
+![mac-wallpaper](wallpaper/mac.jpg)
 
 **Dracula GTK Theme**: [Ant Dracula](https://www.gnome-look.org/p/1099856/)
 
@@ -38,7 +44,11 @@
 
 **Program start menu**: rofi
 
-**Compton**: compton-tryone-git
+**Compton**:
+
+if you use dracula and nord theme, please install compton-tryone-git
+
+if you use MacBigSlur theme, please install picom-ibhagwan-git
 
 **Lock**: i3lock(with blur and a lock png) ffmpeg xautolock
 
