@@ -261,17 +261,20 @@ ramp-signal-3-underline = ${colors.success}
 [module/title-button-left]
 type = custom/text
 content = " 🌑 "
+click-left = exec $HOME/.config/polybar/scripts/button-left.sh
 content-foreground = 00CA4E
 content-background = ${colors.background}
 
 [module/title-button-middle]
 type = custom/text
 content = "🌑 "
+click-left = exec $HOME/.config/polybar/scripts/button-middle.sh
 content-foreground = FFBD44
 content-background = ${colors.background}
 
 [module/title-button-right]
 type = custom/text
 content = "🌑 "
+click-left = exec $HOME/.config/polybar/scripts/button-right.sh
 content-foreground = FF605C
 content-background = ${colors.background}

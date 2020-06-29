@@ -17,11 +17,11 @@ ramp-load-2-foreground = ${colors.urgent}
 
 [module/memory]
 type = internal/memory
-interval = 3
+interval = 1
 
 format = <ramp-used> <label>
 
-label = %gb_used%/%gb_total%
+label = %gb_used%
 
 ramp-used-0 = 
 ramp-used-0-foreground = ${colors.success}
