@@ -16,7 +16,10 @@
 
 ![macBigSlurShot](shot/macBigSlur.png)
 
+![macRofi](shot/macBigSlurRofi.png)
+
 ![mac-wallpaper](wallpaper/mac.jpg)
+
 
 **Dracula GTK Theme**: [Ant Dracula](https://www.gnome-look.org/p/1099856/)
 
