@@ -73,6 +73,8 @@ plugins=(git zsh-syntax-highlighting zsh-autosuggestions sudo extract)
 source $ZSH/oh-my-zsh.sh
 
 source ~/.oh-my-zsh/custom/plugins/incr/incr*.zsh
+
+eval $(thefuck --alias)
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -98,14 +100,21 @@ source ~/.oh-my-zsh/custom/plugins/incr/incr*.zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias f="fuck"
+alias ja="java"
+alias jac="javac"
+
 alias vz="vim ~/.zshrc"
 alias vv="vim ~/.vimrc"
 alias sz="source ~/.zshrc"
 alias vs="vim ~/.config/sxhkd/sxhkdrc"
 alias vb="vim ~/.config/bspwm/bspwmrc"
+alias vp="vim ~/.config/picom/picom.conf"
 
 alias jc="cd ~/.config"
+alias jb="cd ~/bspwm-dotfiles"
 alias jcl="cd ~/clone"
+alias jp="cd ~/.config/polybar"
 alias jvc="cd ~/Code/VimCode"
 
 alias gc="git clone"
@@ -132,9 +141,11 @@ alias up="yay -Syyu"
 
 alias re="reboot"
 alias ra="ranger"
+alias ti="sudo timeshift-gtk"
 alias po="poweroff"
 alias ne="neofetch | lolcat"
 alias pf="PF_INFO='ascii title os host kernel uptime pkgs de wm shell editor memory' /usr/bin/pfetch"
+alias we="curl -s v2.wttr.in/baode"
 alias cs="sh /opt/shell-color-scripts/colorscript.sh -r"
 alias x="extract"
 alias sc="xprop | grep WM_CLASS"
