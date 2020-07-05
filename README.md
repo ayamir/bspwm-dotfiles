@@ -12,7 +12,7 @@
 
 ![nord-wallpaper](wallpaper/Nord.png)
 
-## MacBigSlur:
+## MacBigSur:
 
 ![macBigSlurShot](shot/macBigSlur.png)
 
