@@ -64,6 +64,11 @@ exec = ~/.config/polybar/scripts/weather-bar.sh
 click-left = sh ~/.config/polybar/scripts/weather-bar.sh &
 interval = 600
 
+[module/open-weather]
+type = custom/script
+exec = ~/.config/polybar/scripts/openweathermap-fullfeatured.sh
+internal = 500
+
 [module/network-detail]
 type = internal/network
 interface = ${config.interface}

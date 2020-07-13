@@ -1,0 +1,9 @@
+rofi.font: SFNS Display bold 14
+rofi.columns: 2
+rofi.lines: 10
+rofi.width: 800
+rofi.align: center
+rofi.display-drun: App
+rofi.show-icons: true
+rofi.icon-theme: papirus 
+rofi.theme: ~/.config/rofi/Big-sur.rasi

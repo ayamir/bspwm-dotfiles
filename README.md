@@ -14,9 +14,9 @@
 
 ## MacBigSur:
 
-![macBigSlurShot](shot/macBigSlur.png)
+![macBigSurShot](shot/macBigSur.png)
 
-![macRofi](shot/macBigSlurRofi.png)
+![macRofi](shot/macBigSurRofi.png)
 
 ![mac-wallpaper](wallpaper/mac.jpg)
 

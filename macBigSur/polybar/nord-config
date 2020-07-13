@@ -40,11 +40,11 @@ override-redirect = false
 # Top modules
 top-left = title-button-left title-button-middle title-button-right title
 top-center = bspwm
-top-right = update backlight pulseaudio  battery network-short date
+top-right = update backlight pulseaudio  battery network-wlan network-lan date
 
 # Bottom modules
 bottom-left =
-bottom-center = weather
+bottom-center = weather open-weather
 bottom-right = network-detail memory cpu
 
 systray-top = none
