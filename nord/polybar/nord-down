@@ -17,11 +17,11 @@ ramp-load-2-foreground = ${colors.urgent}
 
 [module/memory]
 type = internal/memory
-interval = 3
+interval = 1
 
 format = <ramp-used> <label>
 
-label = %gb_used%/%gb_total%
+label = %gb_used%
 
 ramp-used-0 = 
 ramp-used-0-foreground = ${colors.success}
@@ -64,15 +64,19 @@ exec = ~/.config/polybar/scripts/weather-bar.sh
 click-left = sh ~/.config/polybar/scripts/weather-bar.sh &
 interval = 600
 
+[module/open-weather]
+type = custom/script
+exec = ~/.config/polybar/scripts/openweathermap-fullfeatured.sh
+internal = 500
+
 [module/network-detail]
 type = internal/network
 interface = ${config.interface}
-
-interval = 3
-
+accumulate-stats = true
+interval = 1
 format-connected = <label-connected>
 
-label-connected =  %downspeed:9%   %upspeed:9%
+label-connected = " %downspeed%  %upspeed%"
 label-connected-foreground = ${colors.success}
 
 [module/temperature]

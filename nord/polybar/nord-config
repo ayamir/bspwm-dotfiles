@@ -9,7 +9,7 @@ width = 100%
 height = 3%
 offset-x = 0%
 offset-y = 0%
-radius = 0.0
+radius = 12
 
 
 fixed-center = true
@@ -38,13 +38,13 @@ override-redirect = false
 # show-desktop: Display desktop (i3 only)
 
 # Top modules
-top-left = title
+top-left = title-button-left title-button-middle title-button-right title
 top-center = bspwm
-top-right = update backlight pulseaudio  battery network-short date
+top-right = update backlight pulseaudio  battery network-wlan network-lan date
 
 # Bottom modules
 bottom-left =
-bottom-center = weather
+bottom-center = weather open-weather
 bottom-right = network-detail memory cpu
 
 systray-top = none

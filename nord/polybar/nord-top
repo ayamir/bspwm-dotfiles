@@ -83,7 +83,7 @@ date-alt = %Y-%m-%d%
 format = <label>
 label =  %date%
 label-margin = 1
-label-underline = ${colors.nord8}
+label-underline = ${colors.foreground}
 
 [module/battery]
 type = internal/battery
@@ -141,7 +141,7 @@ use-ui-max = false
 format-volume = <ramp-volume> <label-volume>
 format-volume-underline = ${colors.function}
 
-label-muted =  muted
+label-muted =  
 label-muted-foreground = ${colors.urgent}
 label-muted-underline = ${colors.urgent}
 
@@ -171,7 +171,7 @@ format-underline = ${colors.nord9}
 
 ramp-0 = 
 
-label = %{A1:$HOME/.config/polybar/scripts/toggle-redshift.sh:}%percentage%%%{A}
+label = %percentage%%
 ramp-foreground = ${colors.nord9}
 
 [module/mpd]
@@ -229,7 +229,7 @@ content-padding = 1
 
 click-left = ${config.notify-click-left}
 
-[module/network-short]
+[module/network-wlan]
 type = internal/network
 interface = ${config.interface}
 
@@ -257,3 +257,40 @@ ramp-signal-2-underline = ${colors.nord7}
 
 ramp-signal-3-foreground = ${colors.success}
 ramp-signal-3-underline = ${colors.success}
+
+[module/network-lan]
+
+type = internal/network
+interface = enp2s0
+
+interval = 1
+
+format-connected = 
+format-connected-foreground = ${colors.frost-a1}
+format-connected-underline = ${colors.frost-a1}
+
+format-disconnected = 
+format-disconnected-foreground = ${colors.urgent}
+format-disconnected-underline = ${colors.urgent}
+
+
+[module/title-button-left]
+type = custom/text
+content = " 🌑 "
+click-left = exec $HOME/.config/polybar/scripts/button-left.sh
+content-foreground = ${colors.green}
+content-background = ${colors.background}
+
+[module/title-button-middle]
+type = custom/text
+content = "🌑 "
+click-left = exec $HOME/.config/polybar/scripts/button-middle.sh
+content-foreground = ${colors.notify}
+content-background = ${colors.background}
+
+[module/title-button-right]
+type = custom/text
+content = "🌑 "
+click-left = exec $HOME/.config/polybar/scripts/button-right.sh
+content-foreground = ${colors.urgent}
+content-background = ${colors.background}

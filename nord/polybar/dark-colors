@@ -1,10 +1,9 @@
 ; vim:ft=dosini
 
 [colors]
-background = #2E3440
-;background = $00000000
-buffer = #3B4252
+background = #772E3440
 foreground = #D8DEE9
+buffer = #3B4252
 nord6 = #ECEFF4
 nord7 = #8FBCBB
 nord8 = #88C0D0
@@ -15,6 +14,7 @@ notify = #EBCB8B
 success = #A3BE8C
 function = #B48EAD
 grey-9 = #212121
+green = #99B283
 
 frost-a1 = #8fbcbb
 frost-a2 = #88c0d0

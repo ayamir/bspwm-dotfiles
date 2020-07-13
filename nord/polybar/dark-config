@@ -35,6 +35,8 @@ font-1 = FontAwesome5Free:style=Solid:pixelsize=15;1
 font-2 = FontAwesome5Free:style=Regular:pixelsize=15;1
 font-3 = FontAwesome5Brands:pixelsize=15;1
 font-4 = WenQuanYiMicroHei:size=12
+font-5 = DejaVu Sans:pixelsize=15:weight=regular;5
+
 
 modules-left = ${config.top-left}
 modules-center = ${config.top-center}
@@ -94,4 +96,4 @@ cursor-scroll = ns-resize
 enable-ipc = true
 
 [settings]
-pseudo-transparency = true
+pseudo-transparency = false
