@@ -12,7 +12,7 @@ width = ${config.width}
 height = ${config.height}
 offset-x = ${config.offset-x}
 offset-y = ${config.offset-y}
-radius = ${config.radius}
+;radius = ${config.radius}
 
 fixed-center = ${config.fixed-center}
 dpi = ${config.dpi}
@@ -57,7 +57,7 @@ width = ${config.width}
 height = ${config.height}
 offset-x = ${config.offset-x}
 offset-y = ${config.offset-y}
-radius = ${config.radius}
+;radius = ${config.radius}
 
 fixed-center = ${config.fixed-center}
 bottom = true

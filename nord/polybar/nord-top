@@ -69,7 +69,7 @@ label-empty =
 [module/update]
 type = custom/script
 exec = ~/.config/polybar/scripts/updates-pacman-aurhelper.sh
-internal = 6000
+internal = 600
 
 [module/date]
 type = internal/date
