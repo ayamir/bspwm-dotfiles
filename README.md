@@ -49,19 +49,19 @@
 
 **Compton**:
 
-if you use dracula and nord theme, please install compton-tryone-git
+if you use Dracula theme, please install compton-tryone-git
 
-if you use MacBigSlur theme, please install picom-ibhagwan-git
+if you use Nord or MacBigSlur theme, please install picom-ibhagwan-git
 
 **Lock**: i3lock(with blur and a lock png) ffmpeg xautolock
 
-**Wallpaper**: feh
+**Wallpaper Manage**: feh and nitrogen
 
-**Font**: Droid Sans Mono Nerd Font:size=13 (noto-fonts-complete powerline-fonts needed)
+**Font**: Droid Sans Mono Nerd Font:size=13 (**noto-fonts-complete powerline-fonts** needed)
 
-If you use the dracula theme, in order to display the icon font, you should install **nerd-fonts-complete**
+If you use the Dracula theme, in order to display the icon font, you should install **nerd-fonts-complete**
 
-If you use the nord theme, in order to display the icon font, you should install **ttf-font-awesome** and **otf-font-awesome**
+If you use the Nord or MacBigSur theme, in order to display the icon font, you should install **ttf-font-awesome** , **otf-font-awesome** and **ttf-dejavu**
 
 **Shell**: zsh(with oh-my-zsh)
 
