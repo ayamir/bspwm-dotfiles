@@ -20,7 +20,6 @@
 
 ![mac-wallpaper](wallpaper/mac.jpg)
 
-
 **Dracula GTK Theme**: [Ant Dracula](https://www.gnome-look.org/p/1099856/)
 
 **Nord GTK Theme**: [Nordic](https://www.gnome-look.org/p/1267246/)
@@ -31,7 +30,9 @@
 
 **Message notifier**: dunst
 
-**Editor**: vim(with vim-plus), nano
+**Editor**: vim(with [**vim-plus**](https://github.com/chxuan/vimplus)), nano
+
+The icons for different file types need at least one nerd font in your fonts directory to display.
 
 **File browser**: ranger
 
@@ -57,9 +58,9 @@ if you use Nord or MacBigSlur theme, please install picom-ibhagwan-git
 
 **Wallpaper Manage**: feh and nitrogen
 
-**Font**: Droid Sans Mono Nerd Font:size=13 (**noto-fonts-complete powerline-fonts** needed)
+**Font**: Droid Sans Mono Nerd Font:size=13 (**noto-fonts-complete** **powerline-fonts** needed)
 
-If you use the Dracula theme, in order to display the icon font, you should install **nerd-fonts-complete**
+If you use the Dracula theme, in order to display the icon font, you should install [**nerd-fonts-complete**](https://github.com/ryanoasis/nerd-fonts)
 
 If you use the Nord or MacBigSur theme, in order to display the icon font, you should install **ttf-font-awesome** , **otf-font-awesome** and **ttf-dejavu**
 
