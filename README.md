@@ -60,11 +60,11 @@ How to start the nord polybar :
 
    2. About audio control: You should install **pulseaudio** and **pulseaudio-ctl**
 
-   3. If you get warn like this: 
-
-      "warn: Dropping unmatched character ️ (U+fe0f)"
+   3. If you get warn like this: "warn: Dropping unmatched character ️ (U+fe0f)"
 
       Don't worry, it doesn't matter. It caused by the wttr.in emoji. In fact, the weather icon has been displayed correctly if you have installed the noto-fonts-emoji.
+
+   4. If the polybar doesn't appear, please modify the monitor name in **dark-config** to your monitor name. The correct value can use **xrandr** command to get.
 
 File structure:
 
