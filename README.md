@@ -10,7 +10,7 @@
 
 ![nord.png](shot/nord.png)
 
-![nord-wallpaper](wallpaper/Nord.png)
+![nord-wallpaper](wallpaper/NordPeeks.png)
 
 ## MacBigSur:
 
