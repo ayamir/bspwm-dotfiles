@@ -46,13 +46,47 @@ The icons for different file types need at least one nerd font in your fonts dir
 
 **About nord polybar, I customized [Nord Polybar](https://github.com/Yucklys/polybar-nord-theme)**
 
+How to start the nord polybar : 
+
+1. backup your old polybar config
+
+2. cp -r bspwm-dotfiles/nord/polybar ~/.config/
+
+3. sh ~/.config/polybar/launch.sh
+
+   You will get a lot of errors and warnings if you launch it for the first time.
+
+   1. About icon: You should install **ttf-font-awesome** , **otf-font-awesome**(to display workspace and status icons), **ttf-dejavu**(to display three mac like icons in the left-top corner) and **noto-fonts-emoji**(to display wttr.in weather emoji). You can see all of fonts used in **dark-config** file
+
+   2. About audio control: You should install **pulseaudio** and **pulseaudio-ctl**
+
+   3. If you get warn like this: 
+
+      "warn: Dropping unmatched character ️ (U+fe0f)"
+
+      Don't worry, it doesn't matter. It caused by the wttr.in emoji. In fact, the weather icon has been displayed correctly if you have installed the noto-fonts-emoji.
+
+File structure:
+
+​	dark-colors: define all nordic color used
+
+​	dark-config: two bars config, about fonts used and directly control bar behavior
+
+​	nord-config: define global settings constant like monitor name, width, height, offset and other settings. define two bars modules used(there are many unused modules)
+
+​	nord-top: define modules needed in top bar
+
+​	nord-down: define modules needed in bottom bar
+
+More details you can look the original nord polybar:  [Nord Polybar](https://github.com/Yucklys/polybar-nord-theme)
+
 **Program start menu**: rofi
 
 **Compton**:
 
-if you use Dracula theme, please install compton-tryone-git
+if you use Dracula theme, please install **compton-tryone-git**
 
-if you use Nord or MacBigSlur theme, please install picom-ibhagwan-git
+if you use Nord or MacBigSlur theme, please install **picom-ibhagwan-git**
 
 **Lock**: i3lock(with blur and a lock png) ffmpeg xautolock
 
