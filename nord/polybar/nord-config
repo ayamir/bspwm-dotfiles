@@ -86,13 +86,13 @@ warn-temperature = 70
 
 # GitHub personal token, generate from https://github.com/settings/tokens/new?scopes=notifications&description=Notifier+for+Polybar
 # where select at least `notifications` option
-github-token = 00ed987a6d7efd532c5b4ca0849c2803228d1b5d
+#github-token = 00ed987a6d7efd532c5b4ca0849c2803228d1b5d
 
 # notify module setting
 notify-click-left = xdotool key control+grave
 
 # network module setting
-network-click-left = i3-msg workspace 2
+# network-click-left = i3-msg workspace 2
 
 # i3
 # Only show workspaces defined on the same output as the bar
