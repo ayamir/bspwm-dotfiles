@@ -106,9 +106,26 @@ More details you can look the original nord polybar:  [Nord Polybar](https://git
 sudo cp lock/lock.sh /usr/bin/lock && sudo cp lock/lock.png /bin/
 ```
 
+------
+
+**Weather**:
+
 I use [wttr.in](https://github.com/chubin/wttr.in) to get weather, so you'd better add follow lines in your /etc/hosts to solve the problem of DNS resolution
+
 
 ```bash
 # wttr.in
 5.9.243.187 wttr.in
+```
+
+You should change the city in **polybar/script/weather-bar.sh** to your city to get correct weather.
+
+If you encounter a problem like this:
+
+![weather-trouble](shot/weather-trouble.png)
+
+Please make sure you have connected to the Internet, then
+
+```bash
+sh ~/.config/polybar/launch.sh
 ```
