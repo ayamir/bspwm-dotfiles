@@ -32,7 +32,7 @@
 
 - **Editor**: vim(with [**vim-plus**](https://github.com/chxuan/vimplus)), nano
 
-  The icons for different file types need at least one nerd font in your fonts directory to display.
+  The icons for different file types need your terminal font is a nerd font to display.
 
 - **File browser**: ranger
 
