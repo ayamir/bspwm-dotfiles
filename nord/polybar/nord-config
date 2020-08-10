@@ -40,7 +40,7 @@ override-redirect = false
 # Top modules
 top-left = title-button-left title-button-middle title-button-right title
 top-center = bspwm
-top-right = update backlight pulseaudio  battery network-wlan network-lan date
+top-right = backlight pulseaudio  battery network-wlan network-lan date
 
 # Bottom modules
 bottom-left =

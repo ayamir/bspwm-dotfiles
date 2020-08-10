@@ -78,7 +78,7 @@ interval = 1.0
 ; NOTE: if you want to use syntax tags here you need to use %%{...}
 date = %H:%M:%S
 
-date-alt = %Y-%m-%d%
+date-alt = %Y-%m-%d %a
 
 format = <label>
 label =  %date%
@@ -274,16 +274,16 @@ format-disconnected-foreground = ${colors.urgent}
 format-disconnected-underline = ${colors.urgent}
 
 
-[module/title-button-left]
+[module/title-button-middle]
 type = custom/text
-content = " 🌑 "
+content = "🌑 "
 click-left = exec $HOME/.config/polybar/scripts/button-left.sh
 content-foreground = ${colors.green}
 content-background = ${colors.background}
 
-[module/title-button-middle]
+[module/title-button-left]
 type = custom/text
-content = "🌑 "
+content = " 🌑 "
 click-left = exec $HOME/.config/polybar/scripts/button-middle.sh
 content-foreground = ${colors.notify}
 content-background = ${colors.background}
