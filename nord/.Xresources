@@ -1,4 +1,4 @@
-Xft.dpi: 110
+Xft.dpi: 115
 Xft.antialias: true
 Xft.hinting: true
 Xft.rgba: rgb
@@ -103,24 +103,40 @@ UXTerm*faceSize: 11
 UXTerm*utf8: 2
 UXTerm*locale: true
 
-UXTerm.vt100.translations: #override \n\
-  Ctrl <Key> minus: smaller-vt-font() \n\
-  Ctrl <Key> plus: larger-vt-font() \n\
-  Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
-  Ctrl Shift <Key>C: copy-selection(CLIPBOARD)
+!! URxvt
 
+URxvt*imLocale: en_US.UTF-8
+URxvt*termName: rxvt-unicode-256color
+URxvt*buffered: false
+URxvt.letterSpace: 0
+URxvt.intensityStyles: false
+URxvt.font: xft:Hack Nerd Font Mono:pixelsize=20:minspace=False, \
+            xft:Dejavu Sans:pixelsize=18, \
+            xft:Powerline Fonts:size=12, \
+            xft:Monospace:style=Medium:size=12
+URxvt.saveLines: 2000
+URxvt.scrollBar: false
+URxvt.cursorColor: #88C0D0
+URxvt.cursorBlink: 1
+URxvt.cursorUnderline: 0
+URxvt*skipBuiltinGlyphs: true
 
-! Every shell is a login shell by default (for inclusion of all necessary environment variables)
-UXTerm*loginshell: true
+!! Extensions
 
-! I like a LOT of scrollback...
-UXTerm*savelines: 16384
+URxvt.perl-ext-common: default,matcher,resize-font,url-select,keyboard-select,clipboard,selection-to-clipboard
+URxvt.colorUL: #4682B4
+!! url-select
+URxvt.url-select.underline: true
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
 
-! double-click to select whole URLs :D
-UXTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
-
-! XTerm*scrollBar: true
-! XTerm*rightScrollBar: true
-
-UXTerm*highlightSelection: true
-UXTerm*trimSelection: true
+URxvt.keysym.M-u: perl:url-select:select_next
+!! keyboard-select:
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!! resize-font
+URxvt.keysym.C-k:   font-size:increase
+URxvt.keysym.C-j:   font-size:decrease
+!!clipboard
+URxvt.clipboard.autocopy: true
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
