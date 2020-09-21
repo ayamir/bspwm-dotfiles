@@ -104,8 +104,10 @@ More details you can look the original nord polybar:  [Nord Polybar](https://git
 
 ![Nord-lock](shot/nord-lock.png)
 
+You should install [i3lock-color](https://github.com/Raymo111/i3lock-color)
+
 ```bash
-sudo cp lock/lock.sh /usr/bin/lock && sudo cp lock/wallpaper.png ~/Pictures/Background
+sudo cp lock/lock.sh /usr/bin/lock && cp lock/wallpaper.png ~/Pictures/Background
 ```
 
 ------
