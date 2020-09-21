@@ -2,56 +2,60 @@
 
 sxhkd &
 setxkbmap -option "ctrl:swapcaps"
-compton -b
+picom -b
 $HOME/.config/polybar/launch.sh &
-feh --bg-scale $HOME/Pictures/Background/wallhaven-kw6ro1.png
-#$HOME/Pictures/Background/auto-change.sh &
+#nitrogen --restore &
+sh ~/Pictures/Background/auto-change.sh &
 fcitx &
 xdman &
+dunst &
 xautolock -time 10 -locker '/usr/bin/lock' -corners ---- -cornersize 30 &
 xsetroot -cursor_name left_ptr
 wmname LG3D
+redshift &
 copyq &
-caffeine-indicator &
 xfce4-power-manager &
+qv2ray &
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
-bspc config border_width         1
-bspc config window_gap           5
+bspc config border_width         2
+bspc config window_gap           10
 bspc config focus_follows_pointer true
 bspc config ignore_ewmh_focus true
 
-bspc config focused_border_color "#5e81ac"
-bspc config normal_border_color "#44475a"
+bspc config focused_border_color "#88c0d0"
+bspc config normal_border_color "#4c566a"
 bspc config active_border_color "#5e81ac"
-bspc config presel_feedback_color "#6272a4"
+bspc config presel_feedback_color "#88c0d0"
 
 bspc config split_ratio          0.5
-bspc config borderless_monocle   true
+bspc config borderless_monocle   false
 bspc config gapless_monocle      true
+bspc config paddingless_monocle      true
+unclutter --ignore-scrooling &
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Google-chrome desktop='^3'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
+bspc rule -a Brave-browser desktop='^3'
 bspc rule -a java-lang-Thread desktop='^8' state=floating
 bspc rule -a xdman-Main state=floating
 bspc rule -a Nitrogen state=floating
+bspc rule -a Zathura state=tiled
+bspc rule -a Emacs state=tiled
 bspc rule -a Lxappearance state=floating
 bspc rule -a Xfce4-about state=floating
 bspc rule -a Steam desktop='^5' state=floating
-bspc rule -a netease-cloud-music state=floating desktop='^4'
-bspc rule -a deepin-system-monitor state=floating
+bspc rule -a netease-cloud-music desktop='^4' state=pseudo_tiled
+bspc rule -a FeelUOwn desktop='^4'
 bspc rule -a 'VirtualBox Manager' desktop='^6' state=floating
 bspc rule -a 'VirtualBox Machine' desktop='^6'
 bspc rule -a Galculator state=floating
+bspc rule -a Qq state=floating desktop='^8'
+bspc rule -a TelegramDesktop desktop='^8'
 bspc rule -a Gpick state=floating
-bspc rule -a Code desktop='^2'
 bspc rule -a jetbrains-idea desktop='^2'
 bspc rule -a jetbrains-pycharm desktop='^2'
 bspc rule -a jetbrains-clion desktop='^2'
 bspc rule -a jetbrains-webstorm desktop='^2'
 bspc rule -a jetbrains-datagrip desktop='^2'
-
+bspc rule -a jetbrains-phpstorm desktop='^2'
+bspc rule -a jetbrains-studio desktop='^2'
