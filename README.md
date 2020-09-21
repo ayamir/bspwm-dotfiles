@@ -102,6 +102,8 @@ More details you can look the original nord polybar:  [Nord Polybar](https://git
 
 **i3lock's config**: (About autolock's details, please look the bspwmrc)
 
+![Nord-lock](shot/nord-lock.png)
+
 ```bash
 sudo cp lock/lock.sh /usr/bin/lock && sudo cp lock/wallpaper.png ~/Pictures/Background
 ```
