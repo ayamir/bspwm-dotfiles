@@ -4,34 +4,38 @@
 
 # terminal emulator
 super + Return
-	alacritty
+	kitty
+
+super + shift + Return
+	termite
 
 super + e
     emacs
 
-super + u
-    urxvt
+super + z
+    zathura
 
 # program launcher
 super + d
 #  sh ~/.config/rofi/launchers-git/launcher.sh
-	rofi -show drun
+	sh ~/.config/bspwm/rofi/bin/launcher	
 
 super + p
     dmenu_run -fn 'xos JetBrainsMono:size=12' -sb '#88C0D0' -nb '#2E3440' -nf '#D8DEE9' -sf '#434C5E'
 
-super + n
-    nemo
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
 
-super + n
+super + shift + n
 	thunar
 
+super + n
+    nmd
+
 super + c
-	google-chrome-stable
+    brave
 
 super + shift + m
     netease-cloud-music
@@ -40,7 +44,7 @@ super + shift + s
     flameshot gui
 
 super + shift + v
-    VBoxManage startvm "WinDev2007Eval" --type gui
+    VBoxManage startvm "WinDev2008Eval" --type gui
 
 
 XF86AudioRaiseVolume
@@ -61,11 +65,18 @@ XF86AudioNext
 XF86AudioPrev
     playerctl previous
 
-XF86MonBrightnessUp
-    light -A 5
+Print
+	scrot 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; viewnior $$(xdg-user-dir PICTURES)/$f'
+	
+# Take a screenshot in 5 second
+alt + Print	
+	scrot -d 5 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; viewnior $$(xdg-user-dir PICTURES)/$f'
 
-XF86MonBrightnessDown
-    light -U 5
+# Brighness control
+XF86MonBrightness{Up,Down}
+	backlight{-up,-down}
+	
+
 #
 # bspwm hotkeys
 #
@@ -186,11 +197,11 @@ alt + shift + a
 
 # restart polybar
 alt + p
-    sh ~/.config/polybar/launch.sh
+    sh ~/.config/bspwm/bin/bspbar
 
 # start IDEs
-alt + {c,i,l,y,w,d,h,a}
-    sh ~/.config/bspwm/scripts/start_ides.sh {code, idea, clion, pycharm, webstorm, datagrip, phpstorm, android}
+alt + {c,i,l,y,w,d,h,a,r,g}
+    sh ~/.config/bspwm/scripts/start_ides.sh {code, idea, clion, pycharm, webstorm, datagrip, phpstorm, android, rider, goland}
 
 alt + control + Delete
-    lock
+    betterlockscreen -l
