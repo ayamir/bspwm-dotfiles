@@ -100,6 +100,12 @@ More details you can look the original nord polybar:  [Nord Polybar](https://git
 
 ------
 
+**Archcraft-polybar**
+
+![archcraft-polybar](./shot/archcraft-polybar.png)
+
+------
+
 **i3lock's config**: (About autolock's details, please look the bspwmrc)
 
 ![Nord-lock](shot/nord-lock.png)
