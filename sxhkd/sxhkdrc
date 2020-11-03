@@ -4,25 +4,32 @@
 
 # terminal emulator
 super + Return
-	kitty
+	alacritty
 
 super + shift + Return
-	termite
+	kitty
 
 super + e
-    emacs
+  emacs
+
+super + v
+  alacritty -e nvim
 
 super + z
-    zathura
+  zathura
 
 # program launcher
 super + d
-#  sh ~/.config/rofi/launchers-git/launcher.sh
-	sh ~/.config/bspwm/rofi/bin/launcher	
+    rofi -show drun
 
 super + p
     dmenu_run -fn 'xos JetBrainsMono:size=12' -sb '#88C0D0' -nb '#2E3440' -nf '#D8DEE9' -sf '#434C5E'
 
+super + control + l
+    sh ~/.local/bin/switch l
+
+super + control + n
+    sh ~/.local/bin/switch n
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -35,7 +42,7 @@ super + n
     nmd
 
 super + c
-    brave
+    firefox-nightly
 
 super + shift + m
     netease-cloud-music
@@ -70,11 +77,16 @@ Print
 	
 # Take a screenshot in 5 second
 alt + Print	
-	scrot -d 5 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; viewnior $$(xdg-user-dir PICTURES)/$f'
+	scrot -d 3 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; viewnior $$(xdg-user-dir PICTURES)/$f'
+
+control + Print
+    scrot '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
 
 # Brighness control
-XF86MonBrightness{Up,Down}
-	backlight{-up,-down}
+XF86MonBrightnessUp
+    light -A 5
+XF86MonBrightnessDown
+	light -U 5
 	
 
 #
@@ -195,6 +207,7 @@ alt shift + l
 alt + shift + a
     bspc config automatic_scheme first_child
 
+
 # restart polybar
 alt + p
     sh ~/.config/bspwm/bin/bspbar
@@ -204,4 +217,4 @@ alt + {c,i,l,y,w,d,h,a,r,g}
     sh ~/.config/bspwm/scripts/start_ides.sh {code, idea, clion, pycharm, webstorm, datagrip, phpstorm, android, rider, goland}
 
 alt + control + Delete
-    betterlockscreen -l
+    betterlockscreen -l dim
