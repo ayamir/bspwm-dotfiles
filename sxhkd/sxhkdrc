@@ -31,6 +31,12 @@ super + control + l
 super + control + n
     sh ~/.local/bin/switch-bspwm n
 
+super + control + e
+    xinput enable 'DELL0828:00 06CB:7E7E Touchpad'
+
+super + control + d
+    xinput disable 'DELL0828:00 06CB:7E7E Touchpad'
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -94,8 +100,11 @@ XF86MonBrightnessDown
 #
 
 # restart and quit bspwm
-super + shift + {Escape, r}
-	bspc {quit,wm -r}
+super + shift + Escape
+	sh $HOME/.config/sxhkd/reset.sh && bspc quit
+
+super + shift + r
+    bspc wm -r
 
 # close and kill
 super + {_,shift + }q

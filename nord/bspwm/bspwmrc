@@ -1,30 +1,14 @@
 #! /bin/sh
-
-sxhkd &
-setxkbmap -option "ctrl:swapcaps"
-picom --config ~/.config/picom/picom.conf -b
-sh ~/.config/bspwm/bin/bspbar
-sh ~/Pictures/auto-change.sh &
-fcitx5 &
-xdman &
-dunst &
-xautolock -time 10 -locker '/usr/bin/betterlockscreen -l dim' -corners ---- -cornersize 30 &
-xsetroot -cursor_name left_ptr
-wmname LG3D
-python3 /usr/bin/redshift-gtk &
-copyq &
-xfce4-power-manager &
-qv2ray &
-nutstore &
+sh $HOME/.config/bspwm/scripts/start.sh
 
 bspc monitor -d J u s t D o I t
 
-bspc config border_width         2
+bspc config border_width         3
 bspc config window_gap           10
 bspc config focus_follows_pointer true
 bspc config ignore_ewmh_focus true
 
-bspc config focused_border_color "#B48EAD"
+bspc config focused_border_color "#88C0D0"
 bspc config normal_border_color "#e6eef3"
 bspc config active_border_color "#eceff4"
 bspc config presel_feedback_color "#98C379"
