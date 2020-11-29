@@ -4,16 +4,18 @@ sxhkd &
 setxkbmap -option "ctrl:swapcaps"
 picom --config ~/.config/picom/picom.conf -b
 sh ~/.config/bspwm/bin/bspbar
-sh ~/Pictures/auto-change.sh &
+sh ~/.fehbg
+#sh ~/Pictures/auto-change.sh &
 fcitx5 &
 xdman &
 dunst &
-xautolock -time 10 -locker '/usr/bin/betterlockscreen -l dim' -corners ---- -cornersize 30 &
+xautolock -time 10 -locker '/usr/bin/betterlockscreen -l' -corners ---- -cornersize 30 &
 xsetroot -cursor_name left_ptr
 wmname LG3D
-python3 /usr/bin/redshift-gtk &
+redshift &
 copyq &
 xfce4-power-manager &
+killall qv2ray
 qv2ray &
 nutstore &
 
@@ -24,10 +26,10 @@ bspc config window_gap           10
 bspc config focus_follows_pointer true
 bspc config ignore_ewmh_focus true
 
-bspc config focused_border_color "#B48EAD"
-bspc config normal_border_color "#e6eef3"
-bspc config active_border_color "#eceff4"
-bspc config presel_feedback_color "#98C379"
+bspc config focused_border_color "#D79921"
+bspc config normal_border_color "#282828"
+bspc config active_border_color "#32302F"
+bspc config presel_feedback_color "#FABD2F"
 
 bspc config split_ratio          0.5
 bspc config borderless_monocle   false
@@ -37,7 +39,7 @@ unclutter --ignore-scrooling &
 
 bspc rule -a firefox desktop='^3'
 bspc rule -a Nightly desktop='^3' state=tiled
-bspc rule -a FirefoxNightly desktop='^3' state=tiled
+bspc rule -a FirefoxNightly state=tiled
 bspc rule -a xdman-Main state=floating
 bspc rule -a Nitrogen state=floating
 bspc rule -a Zathura state=tiled

@@ -4,10 +4,10 @@
 
 # terminal emulator
 super + Return
-	alacritty
+	alacritty -e fish
 
 super + shift + Return
-	kitty
+	kitty -e fish
 
 super + e
   emacs
@@ -22,14 +22,14 @@ super + z
 super + d
     rofi -show drun
 
-super + p
+super + shift + d
     dmenu_run -fn 'xos JetBrainsMono:size=12' -sb '#88C0D0' -nb '#2E3440' -nf '#D8DEE9' -sf '#434C5E'
 
 super + control + l
-    sh ~/.local/bin/switch l
+    sh ~/.local/bin/switch-bspwm l
 
 super + control + n
-    sh ~/.local/bin/switch n
+    sh ~/.local/bin/switch-bspwm n
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -42,10 +42,10 @@ super + n
     nmd
 
 super + c
-    firefox-nightly
+    firefox
 
 super + shift + m
-    netease-cloud-music
+    feeluown
 
 super + shift + s
     flameshot gui
