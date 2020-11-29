@@ -78,6 +78,15 @@ XF86AudioNext
 XF86AudioPrev
     playerctl previous
 
+super + control + p
+    mpc toggle
+
+super + control + Right
+    mpc next
+
+super + control + Left
+    mpc prev
+
 Print
 	scrot 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; viewnior $$(xdg-user-dir PICTURES)/$f'
 	
@@ -226,4 +235,4 @@ alt + {c,i,l,y,w,d,h,a,r,g}
     sh ~/.config/bspwm/scripts/start_ides.sh {code, idea, clion, pycharm, webstorm, datagrip, phpstorm, android, rider, goland}
 
 alt + control + Delete
-    betterlockscreen -l dim
+    betterlockscreen -l
