@@ -1,5 +1,28 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export http_proxy="http://127.0.0.1:8889"
+export https_proxy="http://127.0.0.1:8889"
+export GOROOT=/usr/lib/go
+export GOPATH=$HOME/go
+export GOBIN=$HOME/go/bin
+
+export PATH=$HOME/.cabal/bin:/usr/lib/go:$HOME/go:$HOME/go/bin:$HOME/.dotnet/tools:$HOME/.node_modules_global/bin:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export ASPNETCORE_ENVIRONMENT=Development
+
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/mir/.oh-my-zsh"
@@ -8,7 +31,8 @@ export ZSH="/home/mir/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="amuse"
+test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
+ZSH_THEME="archcraft"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -33,7 +57,7 @@ ZSH_THEME="amuse"
 # export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS=true
+# DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -68,13 +92,11 @@ ZSH_THEME="amuse"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions sudo extract)
+
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions extract sudo golang incr)
 
 source $ZSH/oh-my-zsh.sh
 
-source ~/.oh-my-zsh/custom/plugins/incr/incr*.zsh
-
-eval $(thefuck --alias)
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -84,9 +106,9 @@ eval $(thefuck --alias)
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+#   export EDITOR='nvim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='mnvim'
 # fi
 
 # Compilation flags
@@ -100,53 +122,64 @@ eval $(thefuck --alias)
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias f="fuck"
-alias ja="java"
-alias jac="javac"
-
-alias vz="vim ~/.zshrc"
-alias vv="vim ~/.vimrc"
+#
+alias vz="nvim ~/.zshrc"
 alias sz="source ~/.zshrc"
-alias vs="vim ~/.config/sxhkd/sxhkdrc"
-alias vb="vim ~/.config/bspwm/bspwmrc"
-alias vp="vim ~/.config/picom/picom.conf"
 
+alias jpc="cd ~/PrivateConfig"
+alias jb="cd ~/git/bspwm-dotfiles"
+alias jd="cd ~/Downloads"
+alias jdc="cd ~/Downloads/Compressed"
 alias jc="cd ~/.config"
-alias jb="cd ~/bspwm-dotfiles"
 alias jcl="cd ~/clone"
-alias jp="cd ~/.config/polybar"
-alias jvc="cd ~/Code/VimCode"
+alias jp="cd ~/.config/bspwm/polybar"
+alias ji="cd ~/git/i3-dotfiles"
+alias vp="nvim ~/.config/picom/picom.conf"
+alias v3="nvim ~/.config/i3/config"
+
+alias vb="nvim ~/.config/bspwm/bspwmrc"
+alias vs="nvim ~/.config/sxhkd/sxhkdrc"
+alias vv="nvim ~/.vimrc"
+alias vvp="nvim ~/.vimrc.custom.plugins"
+alias vvc="nvim ~/.vimrc.custom.config"
+
+alias pyins="pip3 install --user"
+alias pyuins="pip3 uninstall"
+
+alias ins="land && yay -S"
+alias uins="yay -R"
+alias uinss="yay -Rsn"
+alias up="land && yay -Syyu"
+
+alias stlsa="sudo systemctl start"
+alias stlst="sudo systemctl stop"
+alias stlsu="sudo systemctl status"
+alias stlre="sudo systemctl restart"
+alias stlen="sudo systemctl enable --now"
+alias stldis="sudo systemctl disable"
 
 alias gc="git clone"
 alias ga="git add"
 alias gm="git commit -m"
-alias gpl="git pull origin master"
-alias gps="git push origin master"
+alias gps="git push"
 
-alias pyins="pip install --user"
-alias pyuins="pip uninstall"
-alias pyinss="pip install"
+alias doom="~/.emacs.d/bin/doom"
+alias ew="emacsclient -c -nw"
 
-alias stlsa="sudo systemctl start"
-alias stlst="sudo systemctl stop"
-alias stlre="sudo systemctl restart"
-alias stlsu="sudo systemctl status"
-alias stlen="sudo systemctl enable"
-alias stldis="sudo systemctl disable"
-
-alias ins="yay -S"
-alias uins="yay -R"
-alias uinss="yay -Rsc"
-alias up="yay -Syyu"
-
-alias re="reboot"
-alias ra="ranger"
-alias ti="sudo timeshift-gtk"
-alias po="poweroff"
-alias ne="neofetch | lolcat"
-alias pf="PF_INFO='ascii title os host kernel uptime pkgs de wm shell editor memory' /usr/bin/pfetch"
-alias we="curl -s v2.wttr.in/baode"
-alias cs="sh /opt/shell-color-scripts/colorscript.sh -r"
-alias x="extract"
-alias sc="xprop | grep WM_CLASS"
+alias vim="nvim"
 alias c="clear"
+alias x="extract"
+alias ne="neofetch"
+alias ra="ranger"
+alias re="sh ~/.config/sxhkd/reset.sh && reboot"
+alias po="sh ~/.config/sxhkd/reset.sh && poweroff"
+alias del="sh ~/.rm.sh"
+alias tra="cd ~/.local/share/Trash/files && ls -a"
+alias empty="sudo rm -fr ~/.trash && mkdir ~/.trash"
+alias key="land && yay -S archlinuxcn-keyring"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
