@@ -52,7 +52,7 @@
 
   if you use Dracula theme, please install **compton-tryone-git**
 
-  if you use Nord or MacBigSlur theme, please install **picom-ibhagwan-git**
+  if you use Nord or MacBigSlur theme, please install **picom-jonaburg-git**
 
 - **Lock**: i3lock(with blur and a lock png) ffmpeg xautolock
 
