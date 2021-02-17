@@ -1,5 +1,5 @@
 #! /bin/sh
-sh $HOME/.config/bspwm/scripts/start.sh
+sh $HOME/.config/bspwm/scripts/autostart.sh
 
 bspc monitor -d J u s t D o I t
 
