@@ -110,7 +110,7 @@ XF86MonBrightnessDown
 
 # restart and quit bspwm
 super + shift + Escape
-	sh $HOME/.config/sxhkd/reset.sh && bspc quit
+	bspc quit
 
 super + shift + r
     bspc wm -r
