@@ -2,7 +2,7 @@
 
 sh ~/.fehbg
 
-arr=("sxhkd" "xfce4-power-manager" "copyq" "fcitx5" "dunst" "xdman" "qv2ray" "redshift-gtk" "mpd" "picom" "conky" "~/.config/bspwm/bin/bspbar")
+arr=("sxhkd" "xfce4-power-manager" "copyq" "fcitx5" "dunst" "xdman" "qv2ray" "redshift-gtk" "mpd" "compton" "conky" "~/.config/polybar/launch.sh")
 
 for value in ${arr[@]}
 do

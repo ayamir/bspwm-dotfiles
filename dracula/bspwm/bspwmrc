@@ -1,19 +1,9 @@
 #! /bin/sh
 
-sxhkd &
-compton -b
-setxkbmap -option "ctrl:swapcaps"
-$HOME/.config/polybar/launch.sh &
 feh --bg-scale $HOME/Pictures/wallpaper/wallhaven-mdq3z1.jpg
-#$HOME/Pictures/Background/auto-change.sh &
-fcitx &
-redshift-gtk &
-xdman &
-xautolock -time 10 -locker '/usr/bin/lock' -corners ---- -cornersize 30 &
 xsetroot -cursor_name left_ptr
 wmname LG3D
-caffeine &
-xfce4-power-manager &
+sh ~/.config/bspwm/autostart.sh
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
