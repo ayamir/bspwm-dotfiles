@@ -17,27 +17,27 @@ i3lock \
 --keylayout 2 \
 --force-clock \
 \
---insidevercolor=$background    \
---insidewrongcolor=$background  \
---insidecolor=$background       \
+--insidever-color=$background   \
+--insidewrong-color=$background \
+--inside-color=$background      \
 \
---ringvercolor=$primary         \
---ringwrongcolor=$alert         \
---ringcolor=$primary            \
+--ringver-color=$primary        \
+--ringwrong-color=$alert        \
+--ring-color=$primary           \
 \
---linecolor=$primary            \
---line-uses-inside \
+--line-color=$primary           \
+--line-uses-inside              \
 \
---keyhlcolor=$alert             \
---bshlcolor=$alert              \
+--keyhl-color=$alert            \
+--bshl-color=$alert             \
 \
---separatorcolor=$primary       \
+--separator-color=$primary      \
 \
---verifcolor=$foreground        \
---wrongcolor=$foreground        \
---timecolor=$foreground \
---datecolor=$foreground         \
---layoutcolor=$foreground       \
+--verif-color=$foreground       \
+--wrong-color=$foreground       \
+--time-color=$foreground        \
+--date-color=$foreground        \
+--layout-color=$foreground      \
 \
 --time-align=0 \
 --date-align=0 \
@@ -50,8 +50,8 @@ i3lock \
 --indicator           \
 --keylayout 2         \
 \
---veriftext=""          \
---wrongtext=""          \
+--verif-text=""          \
+--wrong-text=""          \
 # --clock               \
 # --timestr="%H:%M:%S"  \
 # --line-uses-inside       \
